@@ -3,7 +3,7 @@
 :root {
     --slightly-desaturated-cyan: #5fb4a2;
     --dark-blue: #203a4c;
-    --grayish-dark-blue: #333230;
+    --grayish-dark-blue: #33323d;
 
     --very-light-gray: #fafafa;
     --light-gray: #EAEAER;
@@ -31,9 +31,16 @@
     --body-2-line-height: 30px;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: var(--very-light-gray);
     color: var(--dark-blue);
+    padding: 10px 165px 0;
 }
 
 .button {

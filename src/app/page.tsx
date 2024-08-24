@@ -22,8 +22,7 @@ export default function ContactPage() {
 
     return (
         <main>
-            <h1 className='heading-1'>Jived fox nymph grabs quick waltz</h1>
-            <p className='body-1'>Sed egestas, ante et vulputate volutpat, eros pede semper est...</p>
+            <h1>Home Page</h1>
 
             {/* <h1>Contact Me</h1>
             <form onSubmit={handleSubmit}>

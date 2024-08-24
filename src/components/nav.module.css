@@ -1,0 +1,19 @@
+.nav a {
+    text-transform: uppercase;
+}
+
+.nav a {
+    color: var(--grayish-dark-blue);
+    font-family: var(--font-family-body);
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.nav a.active {
+    color: var(--slightly-desaturated-cyan);
+}
