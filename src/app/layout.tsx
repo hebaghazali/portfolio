@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang='en'>
             <body>
                 <header className={styles.header}>
-                    <Image src='/logo.svg' alt='Logo' width={60} height={32} priority />
+                    <Image src='/logo.svg' alt='Logo' width={80} height={80} priority />
                     <Nav />
                 </header>
                 {children}
