@@ -5,6 +5,7 @@ import styles from './page.module.css';
 import React, { useRef, useState } from 'react';
 import Image from 'next/image';
 import { VerticalSpace } from '@/components/verticalSpace';
+import Link from 'next/link';
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -62,7 +63,10 @@ export default function ContactPage() {
                         complex challenges. Based in Egypt, I'm open to both local and remote roles. When I'm not
                         coding, I enjoy listening to music. Check out my portfolio to see what I've been working on!
                     </p>
-                    <button className='button'>Go To Portfolio</button>
+
+                    <Link href='/portfolio'>
+                        <button className='button'>Go To Portfolio</button>
+                    </Link>
                 </div>
             </div>
 

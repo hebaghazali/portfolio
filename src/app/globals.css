@@ -51,6 +51,7 @@ body {
 button {
     outline: none;
     border: none;
+    text-transform: uppercase;
 }
 
 .primary-button {
