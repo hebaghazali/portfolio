@@ -48,9 +48,91 @@ body {
     padding: 10px 165px 0;
 }
 
-.button {
-    background-color: var(--bright-red);
+button {
+    outline: none;
+    border: none;
+}
+
+.primary-button {
+    background-color: var(--dark-blue);
     color: var(--very-light-gray);
+    width: calc(20.2rem - 4.8rem);
+    height: 4.8rem;
+    cursor: pointer;
+    position: relative;
+    transition: 400ms;
+    margin-left: 4.8rem;
+}
+
+.primary-button::before {
+    content: '';
+    position: absolute;
+    left: -4.8rem;
+    top: 0;
+    bottom: 0;
+    width: 4.8rem;
+    background-color: var(--dark-blue);
+    filter: brightness(90%);
+    transition: 400ms;
+}
+
+.primary-button::after {
+    content: '';
+    position: absolute;
+    left: -4.8rem;
+    top: 0;
+    bottom: 0;
+    width: 4.8rem;
+    background-image: url('/images/icons/down-arrows.svg');
+    background-size: 16px 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.primary-button:hover {
+    position: relative;
+    background-color: var(--slightly-desaturated-cyan);
+    color: var(--very-light-gray);
+}
+
+.primary-button:hover::before {
+    content: '';
+    position: absolute;
+    background-color: var(--slightly-desaturated-cyan);
+    filter: brightness(70%);
+}
+
+.primary-button:disabled {
+    position: relative;
+    background-color: #979e9d;
+    filter: brightness(80%);
+}
+
+.primary-button:disabled::before {
+    content: '';
+    position: absolute;
+    background-color: #979e9d;
+    filter: brightness(80%);
+}
+
+.button {
+    background-color: transparent;
+    color: var(--grayish-dark-blue);
+    border: 1px solid var(--grayish-dark-blue);
+    width: 20.2rem;
+    height: 4.8rem;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.button:hover {
+    background-color: var(--grayish-dark-blue);
+    color: var(--very-light-gray);
+}
+
+.button:disabled {
+    border: 1px solid var(--light-gray);
+    cursor: not-allowed;
 }
 
 .heading-1 {
