@@ -9,7 +9,7 @@ export const Nav = () => {
 
     return (
         <nav className={styles.nav}>
-            <ul style={{ display: 'flex', gap: '1rem', listStyle: 'none' }}>
+            <ul>
                 <li>
                     <Link href='/' className={pathname === '/' ? styles.active : ''}>
                         Home

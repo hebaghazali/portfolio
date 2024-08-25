@@ -17,3 +17,13 @@
 .nav a.active {
     color: var(--slightly-desaturated-cyan);
 }
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 4.2rem;
+}
+
+.nav ul li {
+    letter-spacing: 2px;
+}
