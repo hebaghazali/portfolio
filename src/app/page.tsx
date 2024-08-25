@@ -52,7 +52,7 @@ export default function ContactPage() {
             <VerticalSpace height={15} />
 
             <div className={styles.about} ref={aboutMeRef}>
-                <Image src='/images/profile.jpg' alt='profile' width={938} height={938} />
+                <Image src='/images/profile-2.jpg' alt='profile' width={938} height={938} />
 
                 <div>
                     <h1 className='heading-1'>About Me</h1>
