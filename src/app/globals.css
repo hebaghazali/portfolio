@@ -141,6 +141,18 @@ button {
     line-height: var(--heading-1-line-height);
     font-weight: 700;
 }
+.heading-2 {
+    font-family: var(--font-family-heading);
+    font-size: var(--heading-2-font-size);
+    line-height: var(--heading-2-line-height);
+    font-weight: 700;
+}
+.heading-3 {
+    font-family: var(--font-family-heading);
+    font-size: var(--heading-3-font-size);
+    line-height: var(--heading-3-line-height);
+    font-weight: 700;
+}
 
 .body-1 {
     font-family: var(--font-family-body);

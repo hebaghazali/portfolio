@@ -32,16 +32,16 @@ export default function ContactPage() {
         <main className={styles.main}>
             <div>
                 <Image
-                    src='/images/image-homepage-hero@2x.jpg'
+                    src='/images/portrait-beautiful-young-asian-business-woman-work-from-home-with-laptop.jpg'
                     alt='homepage'
-                    width={1110}
-                    height={600}
-                    placeholder='blur'
-                    blurDataURL='/images/image-homepage-hero.jpg'
+                    layout='fill'
+                    objectFit='cover'
                 />
 
-                <div className={`${styles.description} heading-1`}>
-                    <p>Hey, I'm Heba Ghazali and I love building beautiful websites</p>
+                <div className={styles.description}>
+                    <h2 className='heading-2'>
+                        Hey, I'm Heba Ghazali and I love merging design with software engineering
+                    </h2>
                     <button className='primary-button' onClick={scrollToAboutMeSection}>
                         About Me
                     </button>
@@ -51,24 +51,16 @@ export default function ContactPage() {
             <VerticalSpace height={15} />
 
             <div className={styles.about} ref={aboutMeRef}>
-                <Image
-                    src='/images/image-homepage-profile@2x.jpg'
-                    alt='profile'
-                    width={540}
-                    height={600}
-                    placeholder='blur'
-                    blurDataURL='/images/image-homepage-profile.jpg'
-                />
+                <Image src='/images/profile.jpg' alt='profile' width={938} height={938} />
 
                 <div>
                     <h1 className='heading-1'>About Me</h1>
                     <p className='body-1'>
-                        I’m a junior front-end developer looking for a new role in an exciting company. I focus on
-                        writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing
-                        JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based
-                        in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not
-                        coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run
-                        or cycling. I’d love you to check out my work.
+                        I'm a software engineer passionate about crafting innovative solutions. I specialize in
+                        front-end with JavaScript, TypeScript, and React.js, and I'm also exploring back-end development
+                        with Node.js, Python, and SQL. I focus on writing clean, maintainable code and love tackling
+                        complex challenges. Based in Egypt, I'm open to both local and remote roles. When I'm not
+                        coding, I enjoy listening to music. Check out my portfolio to see what I've been working on!
                     </p>
                     <button className='button'>Go To Portfolio</button>
                 </div>

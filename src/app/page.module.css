@@ -16,6 +16,7 @@
     width: 44.5rem;
     background-color: #fafafa;
     padding: 6.5rem 0;
+    padding-right: 5.5rem;
 }
 
 .main .description p {
@@ -34,17 +35,16 @@
 }
 
 .about img {
-    width: 54rem;
-    height: 100%;
+    width: 60rem;
+    height: 60rem;
 }
 
 .about > div {
     width: 35rem;
     border-top: 1px solid var(--light-gray);
     border-bottom: 1px solid var(--light-gray);
-    padding: 5rem 0;
-}
-
-.about > div p {
-    padding: 2.8rem 0 2.4rem;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
