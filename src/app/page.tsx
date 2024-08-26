@@ -35,8 +35,8 @@ export default function ContactPage() {
                 <Image
                     src='/images/portrait-beautiful-young-asian-business-woman-work-from-home-with-laptop.jpg'
                     alt='homepage'
-                    layout='fill'
-                    objectFit='cover'
+                    fill
+                    style={{ objectFit: 'cover' }}
                 />
 
                 <div className={styles.description}>
