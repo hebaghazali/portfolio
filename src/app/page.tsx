@@ -2,10 +2,24 @@
 
 import { contactSchema } from '@/schemas/contact.schema';
 import styles from './page.module.css';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { VerticalSpace } from '@/components/verticalSpace';
 import Link from 'next/link';
+
+const logVisit = async () => {
+    try {
+        await fetch('/api/log', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ message: 'logged...' }),
+        });
+    } catch (error) {
+        console.error('Error logging visit:', error);
+    }
+};
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -28,6 +42,10 @@ export default function ContactPage() {
             }
         }
     };
+
+    useEffect(() => {
+        logVisit();
+    }, []);
 
     return (
         <main className={styles.main}>
