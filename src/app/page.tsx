@@ -41,7 +41,7 @@ export default function ContactPage() {
 
                 <div className={styles.description}>
                     <h2 className='heading-2'>
-                        Hey, I'm Heba Ghazali and I love merging design with software engineering
+                        Hey, I'm Heba Ghazali and I love solving complex problems with creative frontend solutions.
                     </h2>
                     <button className='primary-button' onClick={scrollToAboutMeSection}>
                         About Me
@@ -57,11 +57,12 @@ export default function ContactPage() {
                 <div>
                     <h1 className='heading-1'>About Me</h1>
                     <p className='body-1'>
-                        I'm a software engineer passionate about crafting innovative solutions. I specialize in
-                        front-end with JavaScript, TypeScript, and React.js, and I'm also exploring back-end development
-                        with Node.js, Python, and SQL. I focus on writing clean, maintainable code and love tackling
-                        complex challenges. Based in Egypt, I'm open to both local and remote roles. When I'm not
-                        coding, I enjoy listening to music. Check out my portfolio to see what I've been working on!
+                        I'm a software engineer passionate about building exceptional digital products. I excel in
+                        creating user-friendly interfaces and have a strong foundation in web development technologies.
+                        I'm also exploring back-end development to gain a deeper understanding of how applications work.
+                        I'm always eager to learn new things and take on challenging projects. Based in Egypt, I'm open
+                        to both local and remote opportunities. When I'm not coding, I enjoy listening to music. Check
+                        out my portfolio to see my work!
                     </p>
 
                     <Link href='/portfolio'>
