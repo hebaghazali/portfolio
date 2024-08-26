@@ -21,6 +21,11 @@ export const Nav = () => {
                     </Link>
                 </li>
                 <li>
+                    <Link href='/blog' className={pathname === '/blog' ? styles.active : ''}>
+                        Blog
+                    </Link>
+                </li>
+                <li>
                     <Link href='/contact' className={pathname === '/contact' ? styles.active : ''}>
                         Contact Me
                     </Link>
