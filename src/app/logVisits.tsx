@@ -29,6 +29,12 @@ const LogVisit = () => {
             return;
         }
 
+        if (!db) {
+            console.error('Firebase not initialized');
+            console.log(process.env);
+            return;
+        }
+
         const logVisit = async () => {
             try {
                 const sessionId = getSessionId();
