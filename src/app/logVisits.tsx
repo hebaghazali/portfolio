@@ -18,9 +18,7 @@ const LogVisit = () => {
     };
 
     const getCountry = async (): Promise<string> => {
-        return await fetch('https://ipapi.co/country_name/')
-            .then((res) => res.text())
-            .catch(() => 'Unknown');
+        return Intl.DateTimeFormat().resolvedOptions().timeZone;
     };
 
     useEffect(() => {
@@ -31,7 +29,6 @@ const LogVisit = () => {
 
         if (!db) {
             console.error('Firebase not initialized');
-            console.log(process.env);
             return;
         }
 
@@ -43,9 +40,10 @@ const LogVisit = () => {
                     .then((data) => data.ip)
                     .catch(() => 'Unavailable');
                 const country = await getCountry();
+                const timestamp = serverTimestamp();
 
                 const documentData = {
-                    timestamp: serverTimestamp(),
+                    timestamp,
                     userAgent: navigator.userAgent,
                     page: window.location.pathname,
                     referrer: document.referrer || null,
@@ -55,9 +53,12 @@ const LogVisit = () => {
                     country,
                     browser: getBrowserName(),
                 };
-                console.log(documentData);
 
-                const documentId = `${sessionId}_${window.location.pathname.replace(/\//g, '_')}_${country}`;
+                const documentId = `${Date.now()}_${window.location.pathname.replace(/\//g, '_')}_${country.replace(
+                    /\//g,
+                    '_'
+                )}`;
+
                 await setDoc(doc(db, 'visits', documentId), documentData, { merge: true });
             } catch (e) {
                 console.error('Error adding document: ', e);
