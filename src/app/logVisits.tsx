@@ -1,7 +1,7 @@
 import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 
-import { doc, serverTimestamp, setDoc } from 'firebase/firestore';
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase';
 import { getSessionId } from '../utils/session';
 
@@ -54,12 +54,7 @@ const LogVisit = () => {
                     browser: getBrowserName(),
                 };
 
-                const documentId = `${Date.now()}_${window.location.pathname.replace(/\//g, '')}_${country.replace(
-                    /\//g,
-                    ''
-                )}`;
-
-                await setDoc(doc(db, 'visits', documentId), documentData, { merge: true });
+                await addDoc(collection(db, 'visits'), documentData);
             } catch (e) {
                 console.error('Error adding document: ', e);
             }
