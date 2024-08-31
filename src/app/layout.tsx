@@ -4,6 +4,7 @@ import './globals.css';
 import ClientLayout from '@/components/ClientLayout';
 import { Nav } from '@/components/nav';
 import Image from 'next/image';
+import { Suspense } from 'react';
 import styles from './layout.module.css';
 
 export const metadata: Metadata = {
@@ -37,7 +38,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <Image src='/images/logo.svg' alt='Logo' width={80} height={80} priority />
                     <Nav />
                 </header>
-                <ClientLayout>{children}</ClientLayout>
+                <Suspense fallback={<div>Loading...</div>}>
+                    <ClientLayout>{children}</ClientLayout>
+                </Suspense>
                 {/* <footer>
                     <p>
                         Developed by Heba Ghazali <br />
