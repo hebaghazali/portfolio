@@ -1,11 +1,11 @@
 'use client';
 
-import { contactSchema } from '@/schemas/contact.schema';
-import styles from './page.module.css';
-import React, { useRef, useState } from 'react';
-import Image from 'next/image';
 import { VerticalSpace } from '@/components/verticalSpace';
+import { contactSchema } from '@/schemas/contact.schema';
+import Image from 'next/image';
 import Link from 'next/link';
+import React, { useRef, useState } from 'react';
+import styles from './page.module.css';
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });

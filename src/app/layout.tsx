@@ -1,9 +1,10 @@
-import './globals.css';
 import type { Metadata } from 'next';
+import './globals.css';
 
+import ClientLayout from '@/components/ClientLayout';
+import { Nav } from '@/components/nav';
 import Image from 'next/image';
 import styles from './layout.module.css';
-import { Nav } from '@/components/nav';
 
 export const metadata: Metadata = {
     title: 'Heba Ghazali | Portfolio',
@@ -36,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <Image src='/images/logo.svg' alt='Logo' width={80} height={80} priority />
                     <Nav />
                 </header>
-                {children}
+                <ClientLayout>{children}</ClientLayout>
                 {/* <footer>
                     <p>
                         Developed by Heba Ghazali <br />
