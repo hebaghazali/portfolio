@@ -54,9 +54,9 @@ const LogVisit = () => {
                     browser: getBrowserName(),
                 };
 
-                const documentId = `${Date.now()}_${window.location.pathname.replace(/\//g, '_')}_${country.replace(
+                const documentId = `${Date.now()}_${window.location.pathname.replace(/\//g, '')}_${country.replace(
                     /\//g,
-                    '_'
+                    ''
                 )}`;
 
                 await setDoc(doc(db, 'visits', documentId), documentData, { merge: true });
