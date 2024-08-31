@@ -3,6 +3,7 @@
 
 :root {
     --slightly-desaturated-cyan: #5fb4a2;
+    --slightly-dark-desaturated-cyan: #429482;
     --dark-blue: #203a4c;
     --grayish-dark-blue: #33323d;
 
@@ -32,6 +33,24 @@
     --body-2-line-height: 30px;
 }
 
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--very-light-gray);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--slightly-desaturated-cyan);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--slightly-dark-desaturated-cyan);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -40,6 +59,7 @@
 
 html {
     font-size: 10px;
+    overflow: scroll;
 }
 
 body {
