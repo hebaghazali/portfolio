@@ -1,11 +1,10 @@
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
-
-import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase';
 import { getSessionId } from '../utils/session';
 
-const LogVisit = () => {
+const useLogVisit = () => {
     const pathname = usePathname();
     const searchParams = useSearchParams();
 
@@ -62,7 +61,7 @@ const LogVisit = () => {
         logVisit();
     }, [pathname, searchParams]);
 
-    return <></>;
+    return null;
 };
 
-export default LogVisit;
+export default useLogVisit;

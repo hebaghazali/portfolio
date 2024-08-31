@@ -1,6 +1,6 @@
 'use client';
 
-import LogVisit from '@/app/logVisits';
+import useLogVisit from '@/app/logVisits';
 import { ReactNode } from 'react';
 
 interface ClientLayoutProps {
@@ -8,12 +8,9 @@ interface ClientLayoutProps {
 }
 
 const ClientLayout = ({ children }: ClientLayoutProps) => {
-    return (
-        <>
-            <LogVisit />
-            {children}
-        </>
-    );
+    useLogVisit();
+
+    return children;
 };
 
 export default ClientLayout;
