@@ -1,17 +1,19 @@
 # 🚧 Portfolio Under Construction 🚧
 
-Welcome to my portfolio repository! I'm just getting started on the homepage, with a design inspired by Frontend Mentor's minimalist portfolio template. The project is in its early stages, so there’s still a lot to be done.
+This is the repository for my personal portfolio, which is very much a work in progress. I'm just getting started on the homepage, using a minimalist design that I created based on a Figma design from Frontend Mentor.
 
-### Technologies I'm Using:
-- **Next.js**: For server-side rendering and React-based frontend.
-- **TypeScript**: For type safety and improved code quality.
-- **Zod**: For schema validation.
-- **Zustand**: For state management.
+### Tech Stack:
+- **Next.js**: For building the frontend with server-side rendering.
+- **TypeScript**: To keep the codebase clean and type-safe.
+- **Zod**: For seamless schema validation.
+- **Zustand**: To manage state effectively.
 
-### What to Expect:
-- [ ] Homepage layout and design
-- [ ] Integration of personal projects and case studies
-- [ ] Responsive and accessible design enhancements
-- [ ] More content and features in the near future
+### What's Next:
+- [ ] Completing the homepage layout and design
+- [ ] Developing a portfolio section to showcase my projects in detail.
+- [ ] Creating a blog to share insights and experiences.
+- [ ] Adding a contact page for easy communication.
+- [ ] Ensuring the site is fully responsive
+- [ ] Continuous improvements and refinements
 
-Feel free to explore what's here so far, and check back for updates as I build out the rest of the site!
+You can check out the current progress here: [hebaghazali.vercel.app](https://hebaghazali.vercel.app/). More updates coming soon as I continue to build!
