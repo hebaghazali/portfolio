@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
-import ClientLayout from '@/components/clientLayout';
+import { ClientLayout } from '@/components/clientLayout';
 import { Nav } from '@/components/nav';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -41,6 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     </Link>
                     <Nav mode='light' />
                 </header>
+
                 <Suspense fallback={<div>Loading...</div>}>
                     <ClientLayout>{children}</ClientLayout>
                 </Suspense>
