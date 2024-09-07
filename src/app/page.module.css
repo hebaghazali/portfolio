@@ -1,4 +1,4 @@
-.main > div {
+.main > div:first-child {
     height: 60rem;
     position: relative;
 }

@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
-import ClientLayout from '@/components/ClientLayout';
 import { Nav } from '@/components/nav';
 import Image from 'next/image';
 import { Suspense } from 'react';
+import ClientLayout from '../components/clientLayout';
 import styles from './layout.module.css';
 
 export const metadata: Metadata = {
@@ -36,19 +36,32 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <body>
                 <header className={styles.header}>
                     <Image src='/images/logo.svg' alt='Logo' width={80} height={80} priority />
-                    <Nav />
+                    <Nav mode='light' />
                 </header>
                 <Suspense fallback={<div>Loading...</div>}>
                     <ClientLayout>{children}</ClientLayout>
                 </Suspense>
-                {/* <footer>
-                    <p>
-                        Developed by Heba Ghazali <br />
-                        <small>
-                            Design inspired by <a href='https://www.frontendmentor.io'>FrontendMentor.io</a>
-                        </small>
-                    </p>
-                </footer> */}
+
+                <footer className={styles.footer}>
+                    <div className={styles.footerNav}>
+                        <Image src='/images/logo-white.svg' alt='Logo' width={80} height={80} priority />
+                        <Nav mode='dark' />
+                    </div>
+                    <div className={styles.socials}>
+                        <Image src='/images/icons/linkedin-white.svg' alt='Logo' width={24} height={24} priority />
+                        <Image src='/images/icons/github-white.svg' alt='Logo' width={24} height={24} priority />
+                        <p className={`body-3 ${styles.copyright}`}>
+                            Developed by Heba Ghazali <br />
+                            Design inspired by{' '}
+                            <a
+                                href='https://www.frontendmentor.io/challenges/minimalist-portfolio-website-LMy-ZRyiE'
+                                target='_blank'
+                            >
+                                FrontendMentor.io
+                            </a>
+                        </p>
+                    </div>
+                </footer>
             </body>
         </html>
     );

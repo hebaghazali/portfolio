@@ -1,7 +1,38 @@
 .header {
+    padding: 0 16.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 32px;
     margin: 54px 0;
+}
+
+.footer {
+    padding: 2.8rem 16.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    background-color: var(--grayish-dark-blue);
+}
+
+.footer .footerNav {
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+.footer .socials {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer .socials .copyright {
+    color: var(--very-light-gray);
+}
+
+.footer .socials .copyright a {
+    color: var(--slightly-desaturated-cyan);
+    text-decoration: none;
 }

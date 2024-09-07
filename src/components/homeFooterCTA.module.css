@@ -1,0 +1,9 @@
+.homeFooterCTA {
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+}
+
+.homeFooterCTA h2 {
+    width: 350px;
+}

@@ -1,5 +1,6 @@
 'use client';
 
+import { HomeFooterCTA } from '@/components/homeFooterCTA';
 import { VerticalSpace } from '@/components/verticalSpace';
 import { contactSchema } from '@/schemas/contact.schema';
 import Image from 'next/image';
@@ -70,6 +71,10 @@ export default function ContactPage() {
                     </Link>
                 </div>
             </div>
+
+            <VerticalSpace height={15} />
+
+            <HomeFooterCTA />
 
             <VerticalSpace height={15} />
 

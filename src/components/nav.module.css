@@ -27,3 +27,7 @@
 .nav ul li {
     letter-spacing: 2px;
 }
+
+.nav.dark * {
+    color: var(--very-light-gray);
+}

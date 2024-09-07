@@ -1,0 +1,4 @@
+.horizontalLine {
+    height: 1px;
+    background-color: var(--light-gray);
+}

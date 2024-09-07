@@ -31,6 +31,9 @@
 
     --body-2-font-size: 15px;
     --body-2-line-height: 30px;
+
+    --body-3-font-size: 10px;
+    --body-3-line-height: 12px;
 }
 
 ::-webkit-scrollbar {
@@ -65,13 +68,16 @@ html {
 body {
     background-color: var(--very-light-gray);
     color: var(--dark-blue);
-    padding: 10px 165px 0;
 }
 
 button {
     outline: none;
     border: none;
     text-transform: uppercase;
+}
+
+a {
+    outline: none;
 }
 
 .primary-button {
@@ -140,9 +146,8 @@ button {
     background-color: transparent;
     color: var(--grayish-dark-blue);
     border: 1px solid var(--grayish-dark-blue);
-    width: 20.2rem;
-    height: 4.8rem;
     cursor: pointer;
+    padding: 1.7rem 3.5rem;
     transition: 400ms;
 }
 
@@ -179,4 +184,15 @@ button {
     font-family: var(--font-family-body);
     font-size: var(--body-1-font-size);
     line-height: var(--body-1-line-height);
+}
+
+.body-2 {
+    font-family: var(--font-family-body);
+    font-size: var(--body-2-font-size);
+    line-height: var(--body-2-line-height);
+}
+.body-3 {
+    font-family: var(--font-family-body);
+    font-size: var(--body-3-font-size);
+    line-height: var(--body-3-line-height);
 }

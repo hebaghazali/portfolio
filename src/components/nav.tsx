@@ -1,14 +1,14 @@
 'use client';
 
 import Link from 'next/link';
-import styles from './nav.module.css';
 import { usePathname } from 'next/navigation';
+import styles from './nav.module.css';
 
-export const Nav = () => {
+export const Nav = ({ mode }: { mode: 'light' | 'dark' }) => {
     const pathname = usePathname();
 
     return (
-        <nav className={styles.nav}>
+        <nav className={`${styles.nav} ${mode === 'dark' ? styles.dark : ''}`}>
             <ul>
                 <li>
                     <Link href='/' className={pathname === '/' ? styles.active : ''}>
