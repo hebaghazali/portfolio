@@ -1,7 +1,6 @@
 'use client';
 import styles from './clientLayout.module.css';
 
-import useLogVisit from '@/app/logVisits';
 import { ReactNode } from 'react';
 
 interface ClientLayoutProps {
@@ -9,7 +8,7 @@ interface ClientLayoutProps {
 }
 
 const ClientLayout = ({ children }: ClientLayoutProps) => {
-    useLogVisit();
+    // useLogVisit();
 
     return <div className={styles.clientLayout}>{children}</div>;
 };
