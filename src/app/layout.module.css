@@ -22,7 +22,7 @@
     gap: 4.8rem;
 }
 
-.footer a {
+.footer .footerNav a {
     display: flex;
     align-items: center;
 }
