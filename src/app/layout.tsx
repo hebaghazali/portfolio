@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
+import ClientLayout from '@/components/clientLayout';
 import { Nav } from '@/components/nav';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Suspense } from 'react';
-import ClientLayout from '../components/clientLayout';
 import styles from './layout.module.css';
 
 export const metadata: Metadata = {
