@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    gap: 12.5rem;
+    height: 60rem;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+}
+
+.wrapper.projectWrapper {
+    height: 50rem;
+}
+
+.wrapper img {
+    width: 60rem;
+    height: 60rem;
+}
+
+.wrapper.projectWrapper img {
+    width: 54rem;
+    height: 50rem;
+    object-fit: contain;
+    background-color: var(--very-light-gray);
+}
+
+.wrapper > div {
+    width: 35rem;
+    border-top: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,6 @@
+.projectsWrapper > div {
+    flex-direction: row;
+}
+.projectsWrapper > div:nth-child(even) {
+    flex-direction: row-reverse;
+}

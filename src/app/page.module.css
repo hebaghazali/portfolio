@@ -3,11 +3,6 @@
     position: relative;
 }
 
-.main img {
-    width: 100%;
-    height: 100%;
-}
-
 .main .description {
     position: absolute;
     bottom: 0;

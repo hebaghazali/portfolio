@@ -4,8 +4,8 @@ import { HomeFooterCTA } from '@/components/homeFooterCTA';
 import { VerticalSpace } from '@/components/verticalSpace';
 import { contactSchema } from '@/schemas/contact.schema';
 import Image from 'next/image';
-import Link from 'next/link';
 import React, { useRef, useState } from 'react';
+import { InfoBlock } from '../components/infoBlock';
 import styles from './page.module.css';
 
 export default function ContactPage() {
@@ -52,7 +52,7 @@ export default function ContactPage() {
 
             <VerticalSpace height={15} />
 
-            <div className={styles.about} ref={aboutMeRef}>
+            {/* <div className={styles.about} ref={aboutMeRef}>
                 <Image src='/images/profile-2.jpg' alt='profile' width={938} height={938} />
 
                 <div>
@@ -70,7 +70,18 @@ export default function ContactPage() {
                         <button className='button'>Go To Portfolio</button>
                     </Link>
                 </div>
-            </div>
+            </div> */}
+            <InfoBlock
+                title='About Me'
+                description={
+                    "I'm a software engineer passionate about building exceptional digital products. I excel in creating user-friendly interfaces and have a strong foundation in web development technologies. I'm also exploring back-end development to gain a deeper understanding of how applications work. I'm always eager to learn new things and take on challenging projects. Based in Egypt, I'm open to both local and remote opportunities. When I'm not coding, I enjoy listening to music. Check out my portfolio to see my work!"
+                }
+                imagePath='/images/profile-2.jpg'
+                imageSize={{ width: 938, height: 938 }}
+                projectLink='/portfolio'
+                buttonText='Go To Portfolio'
+                isProject={false}
+            />
 
             <VerticalSpace height={15} />
 
